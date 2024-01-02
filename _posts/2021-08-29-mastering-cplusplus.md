@@ -68,3 +68,36 @@ C++ supports key OOP principles:
 4. *Abstraction:* The process of simplifying complex systems by modeling classes based on essential properties, hiding unnecessary details from the user.
 
 Overall, a strong grasp of OOP in C++ involves effectively utilizing these principles to create modular, maintainable, and extensible code.
+
+### Question 2: Smart Pointers
+
+#### Difference between std::unique_ptr, std::shared_ptr, and std::weak_ptr:
+In C++, smart pointers are a powerful feature designed to manage memory automatically and efficiently. Each type of smart pointer serves a specific purpose:
+
+1. *std::unique_ptr:*
+   - Represents exclusive ownership of a dynamically allocated object.
+   - Ensures that only one std::unique_ptr owns the object.
+   - Transfers ownership when moved, making it a good choice for resource management.
+
+2. *std::shared_ptr:*
+   - Enables shared ownership of a dynamically allocated object.
+   - Maintains a reference count to the object, allowing multiple std::shared_ptr instances to share ownership.
+   - Automatically deallocates the object when the last std::shared_ptr owning it is destroyed or reset.
+
+3. *std::weak_ptr:*
+   - Provides a way to observe or access the object owned by std::shared_ptr without affecting its reference count.
+   - Resolves the issues of circular references that might lead to memory leaks in scenarios involving only std::shared_ptr.
+
+#### How Smart Pointers Work and When to Use Them:
+Smart pointers manage memory by automatically deallocating objects when they are no longer needed, reducing the risk of memory leaks. Here's how they work:
+
+- *Automatic Deallocation:* Smart pointers automatically call delete or delete[] when the last smart pointer owning the object goes out of scope or is reset.
+
+- *Ownership Management:* std::unique_ptr and std::shared_ptr manage ownership explicitly, while std::weak_ptr supplements std::shared_ptr to break potential circular references.
+
+- *Choosing the Right Smart Pointer:*
+  - Use std::unique_ptr when ownership needs to be exclusive.
+  - Use std::shared_ptr when multiple pointers need to share ownership.
+  - Use std::weak_ptr to break potential circular references in scenarios involving std::shared_ptr.
+
+Understanding smart pointers is crucial for effective memory management in C++ and helps prevent common pitfalls associated with manual memory allocation and deallocation.
