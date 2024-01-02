@@ -25,25 +25,4 @@ Let's begin:
    - Explain the concept of templates in C++.
    - What are template specializations?
 
-5. *Standard Template Library (STL):*
-   - Describe the main data structures provided by the STL.
-   - How does the std::sort algorithm work, and what are its implications?
 
-6. *Threads and Multithreading:*
-   - How do you implement multithreading in C++?
-   - Describe the difference between a thread and a process.
-
-7. *Performance and Optimization:*
-   - How do you optimize C++ code to improve performance?
-   - Discuss the use of const and constexpr in writing efficient code.
-
-8. *Solving Complex Problems:*
-   - Address a complex problem and explain how you would solve it in C++.
-   - How do you handle race conditions in a multithreaded application?
-
-9. *C++11/14/17/20 Features:*
-   - What are the new features introduced in C++11/14/17/20?
-   - How do you use lambda expressions and variadic templates?
-
-10. *Practical Coding Tests:*
-    - Ask the candidate to solve practical problems by implementing C++ code during the interview.
