@@ -1,8 +1,8 @@
 ---
 title:  The AI Revolution in Healthcare: Transforming Diagnosis and Treatment
-category: Tech - HealthCare
+subtitle: Key Questions for Senior Software Developer (Part II)
+category: Programming
 ---
-
 
 #Introduction:
 In recent years, Artificial Intelligence (AI) has emerged as a groundbreaking force in revolutionizing various industries, and its impact on healthcare is particularly noteworthy. This article delves into the transformative role of AI in healthcare, specifically focusing on how it is reshaping the landscape of medical diagnosis and treatment.
