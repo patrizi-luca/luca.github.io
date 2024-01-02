@@ -1,5 +1,5 @@
 ---
-title: The AI Revolution in Healthcare: Transforming Diagnosis and Treatment
+title: The AI Revolution in Healthcare\: Transforming Diagnosis and Treatment
 subtitle: Key Questions for Senior Software Developer (Part II)
 category: Programming
 ---
