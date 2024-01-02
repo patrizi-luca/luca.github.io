@@ -1,5 +1,5 @@
 ---
-title: Who is Mike Myers?
+title:  Mastering the C++ Interview: Key Questions for Senior Software Developers
 category: People
 ---
 
