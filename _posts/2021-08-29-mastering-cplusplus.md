@@ -1,7 +1,7 @@
 ---
 title:  Mastering the C++ Interview
 subtitle: Key Questions for Senior Software Developer
-category: People
+category: Programming
 ---
 
 Welcome to "Mastering the C++ Interview: Key Questions for Senior Software Developers." In the competitive landscape of software development, proficiency in C++ is a valuable asset, especially for senior roles. This article delves into crucial interview questions designed to assess a senior software developer's expertise in various aspects of C++ programming. From Object-Oriented Programming principles to memory management, concurrency, and the latest language features, we explore topics that define a seasoned C++ developer. Let's unravel the intricacies of these questions to empower both interviewers and candidates in navigating the challenging terrain of C++ interviews.
@@ -46,3 +46,25 @@ Welcome to "Mastering the C++ Interview: Key Questions for Senior Software Devel
 
 10. *Practical Coding Tests:*
     - Ask the candidate to solve practical problems by implementing C++ code during the interview.
+   
+### Question 1: Object-Oriented Programming (OOP)
+
+#### Explanation of OOP Concepts in C++:
+Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of "objects," which encapsulate data and behavior. In C++, OOP is facilitated through classes and objects.
+
+1. *Classes:* These are user-defined data types that act as blueprints for creating objects. They encapsulate data members (attributes) and member functions (methods).
+
+2. *Objects:* Instances of classes that represent specific entities in the program. Objects encapsulate the state and behavior defined by their corresponding class.
+
+#### Implementation of OOP in C++:
+C++ supports key OOP principles:
+
+1. *Encapsulation:* The bundling of data and functions that operate on that data within a single unit (class).
+
+2. *Inheritance:* The ability of a class to inherit properties and behaviors from another class, facilitating code reuse and establishing a hierarchy.
+
+3. *Polymorphism:* The ability of objects of different types to be treated as objects of a common base type, allowing flexibility and extensibility. In C++, polymorphism is achieved through both function overloading and virtual functions, enabling dynamic method binding.
+
+4. *Abstraction:* The process of simplifying complex systems by modeling classes based on essential properties, hiding unnecessary details from the user.
+
+Overall, a strong grasp of OOP in C++ involves effectively utilizing these principles to create modular, maintainable, and extensible code.
