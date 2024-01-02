@@ -1,5 +1,6 @@
 ---
 title:  Mastering the C++ Interview
+subtitle: Key Questions for Senior Software Developer
 category: People
 ---
 
