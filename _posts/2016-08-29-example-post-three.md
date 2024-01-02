@@ -7,22 +7,6 @@ In the competitive landscape of software development, proficiency in C++ is a va
 
 <!-- more -->
 Let's begin:
-## Questions:
 
-1. *Object-Oriented Programming (OOP):*
-   - Explain the fundamental concepts of OOP and how they are implemented in C++.
-   - Describe multiple inheritance in C++.
-
-2. *Smart Pointers:*
-   - What is the difference between std::unique_ptr, std::shared_ptr, and std::weak_ptr?
-   - How do smart pointers work, and when should they be used?
-
-3. *Memory Management:*
-   - Illustrate the difference between malloc/free and new/delete.
-   - How do you prevent memory leaks in C++?
-
-4. *Templates and Generics:*
-   - Explain the concept of templates in C++.
-   - What are template specializations?
 
 
