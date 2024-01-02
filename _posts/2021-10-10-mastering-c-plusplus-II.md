@@ -3,7 +3,7 @@ title:  Mastering the C++ Interview II
 subtitle: Key Questions for Senior Software Developer (Part II)
 category: Programming
 ---
-* Introduction * 
+## Introduction
 Welcome to the second part of "Mastering the C++ Interview," focusing on advanced topics and the intelligent use of smart pointers in C++. 
 From multithreading challenges to the latest language features, we'll explore how to tackle more complex scenarios. Are you ready to elevate your C++ expertise?
 
