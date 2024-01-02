@@ -1,5 +1,6 @@
 ---
-title:  The AI Revolution in Healthcare: Transforming Diagnosis and Treatment
+title:  Mastering the C++ Interview II
+subtitle: Key Questions for Senior Software Developer (Part II)
 category: Programming
 ---
 
