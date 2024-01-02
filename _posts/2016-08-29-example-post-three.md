@@ -1,5 +1,5 @@
 ---
-title:  Who is Mike Myers? c++
+title:  Mastering the C++ Interview
 category: People
 ---
 
