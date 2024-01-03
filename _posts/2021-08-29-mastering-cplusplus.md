@@ -126,7 +126,7 @@ In C++, templates provide a powerful mechanism for generic programming, allowing
 
 #### Template Specializations
 Template specialization is a powerful feature in C++ that allows developers to provide custom implementations for specific data types within a generic template. It enhances code flexibility and performance by tailoring functionality for certain types while maintaining a generic approach for others. Let's delve deeper into why specialization is useful with an additional example.   
-#### example Scenario: Handling Different Output Formats
+##### Example Scenario: Handling Different Output Formats
 ```
 template <typename T>
 class Printer {
@@ -148,7 +148,7 @@ public:
 ```
 In this example, the `Printer` template is specialized for `std::string`. When printing a string, the specialized version will be used, adding double quotes around the string. For other types, the generic template remains in effect.
 
-#### Benefits of Specialization:
+##### Benefits of Specialization:
 
 1. **Customized Behavior:** Specialization allows you to provide tailored implementations for specific types, addressing unique requirements.
 
