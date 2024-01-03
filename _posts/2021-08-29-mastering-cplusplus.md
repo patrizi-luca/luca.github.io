@@ -117,9 +117,9 @@ In C++, templates provide a powerful mechanism for generic programming, allowing
        ```
        template <typename T>
        class Container {
-           T value;
-       public:
-           // constructor, methods, etc.
+          T value;
+          public:
+          // constructor, methods, etc.
        };
       ```
        
