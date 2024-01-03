@@ -106,31 +106,34 @@ In C++, templates provide a powerful mechanism for generic programming, allowing
 
 - *Concept of Templates:*
   - *Function Templates:* These allow you to define a function with generic types. For example:
-       cpp
+       ```
        template <typename T>
        T add(T a, T b) {
            return a + b;
        }
+       ```
 
 - *Class Templates:* Similar to function templates, class templates enable the creation of generic classes.
-       cpp
+       ```
        template <typename T>
        class Container {
            T value;
        public:
            // constructor, methods, etc.
        };
+      ```
        
 
 - *Template Specializations:*
   - Sometimes, generic templates need specialized implementations for specific data types. This is achieved through template specializations.
-       cpp
+       ```
        template <>
        class Container<int> {
            int value;
        public:
            // specialized implementation for int
        };
+       ```
        
   - Specializations allow tailoring the behavior of templates for specific types while maintaining the generic nature for others.
 
