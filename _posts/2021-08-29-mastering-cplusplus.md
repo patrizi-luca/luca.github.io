@@ -158,3 +158,25 @@ In this example, the `Printer` template is specialized for `std::string`. When p
 
 In summary, template specialization is a valuable tool in C++ for crafting precise solutions for specific types within a generic framework, offering a balance between flexibility and optimization.
 
+### Question 5: Standard Template Library (STL):
+The Standard Template Library (STL) in C++ is a powerful set of template classes and functions that provide general-purpose classes and algorithms with templates that implement many popular and commonly used algorithms and data structures.
+
+- *Main Data Structures in STL:*
+  1. *Vectors (std::vector):* Dynamic arrays that resize themselves automatically.
+  2. *Lists (std::list):* Doubly linked lists with constant time insertions and removals.
+  3. *Queues (std::queue):* FIFO (First In, First Out) data structure.
+  4. *Stacks (std::stack):* LIFO (Last In, First Out) data structure.
+  5. *Maps (std::map):* Associative containers that store elements in key-value pairs.
+  6. *Sets (std::set):* Containers that store unique elements following a specific order.
+
+- *std::sort Algorithm:*
+  - std::sort is a sorting algorithm provided by the STL for sorting elements in a range.
+  - It uses an efficient variant of the introsort algorithm, which combines quicksort, heapsort, and insertion sort.
+  - The algorithm has an average-case time complexity of O(N log N), making it suitable for a wide range of scenarios.
+
+- *Implications:*
+  - Efficient sorting is crucial for many algorithms and applications.
+  - Understanding the underlying algorithm helps in selecting appropriate containers and algorithms for specific use cases.
+  - Users can customize the sorting process by providing custom comparison functions or using lambda expressions.
+
+The STL simplifies the development process by providing robust, generic implementations of common data structures and algorithms, contributing to the efficiency and maintainability of C++ code.
