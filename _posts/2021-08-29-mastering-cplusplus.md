@@ -102,3 +102,19 @@ Smart pointers manage memory by automatically deallocating objects when they are
   - Use std::weak_ptr to break potential circular references in scenarios involving std::shared_ptr.
 
 Understanding smart pointers is crucial for effective memory management in C++ and helps prevent common pitfalls associated with manual memory allocation and deallocation.
+
+### Question 3: Memory Management
+
+Memory management is a critical aspect of C++ development, and understanding the distinctions between malloc/free and new/delete is crucial.
+
+- *malloc/free:*
+     - These functions are part of the C standard library and are used for dynamic memory allocation and deallocation.
+     - malloc allocates a block of memory of a specified size and returns a pointer to the beginning of that block.
+     - free is used to deallocate the memory previously allocated by malloc.
+
+- *new/delete:*
+  - These operators are specific to C++ and provide a more sophisticated approach to memory management.
+  - new dynamically allocates memory for a single object or an array of objects, invoking constructors as needed.
+  - delete deallocates memory previously allocated by new and calls destructors for objects if applicable.
+
+To avoid memory leaks in C++, it's crucial to release allocated memory appropriately. Always pair memory allocation functions with their corresponding deallocation counterparts (malloc with free and new with delete). Additionally, consider using smart pointers, like std::unique_ptr and std::shared_ptr, to automate memory management and reduce the risk of leaks.
