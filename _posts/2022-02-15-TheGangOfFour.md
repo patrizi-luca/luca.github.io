@@ -142,7 +142,7 @@ int main() {
    
 ```
 ### Factory Method Pattern:
-*Intent:* Define an interface for creating an object but let subclasses alter the type of objects that will be created.
+- *Intent:* Define an interface for creating an object but let subclasses alter the type of objects that will be created.
 - *Use case:* When you want to delegate the responsibility of instantiating an object to its subclasses, allowing a class to specify its instantiated objects at runtime.
 - *Implementation:* Involves an interface or an abstract class with a method for creating objects, and concrete subclasses that implement this method to produce objects of a specific type.
 ```
