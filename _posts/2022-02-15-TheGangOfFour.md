@@ -273,5 +273,11 @@ int main() {
 
          return 0;
      }
-     
+
 ```
+
+### Strategy Pattern: Dynamic Algorithms
+- *Intent:* Define a family of algorithms, encapsulate each one, and make them interchangeable. Clients can vary the algorithm independently from the context that uses it.
+- *Use case:* When you want to define a family of algorithms, encapsulate each algorithm, and make them interchangeable.
+
+
