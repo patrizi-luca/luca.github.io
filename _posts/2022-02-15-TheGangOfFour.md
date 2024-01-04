@@ -1,6 +1,5 @@
 ---
 title: The Gang Of Four 
-subtitle: Key Questions for Senior Software Developer (Part II)
 category: Programming C++
 ---
 
@@ -34,21 +33,29 @@ enabling them to make informed decisions during the design process.
 ## Practical Significance:
 
 1. Flexibility and Adaptability:
-The Gang of Four's design patterns promote the principles of flexibility and adaptability in software design. By embracing these patterns, developers gain the ability to create systems that can evolve gracefully in response to changing requirements. This adaptability is crucial in the dynamic landscape of software development.
+The Gang of Four's design patterns promote the principles of flexibility and adaptability in software design.
+By embracing these patterns, developers gain the ability to create systems that can evolve gracefully in response to changing requirements.
+This adaptability is crucial in the dynamic landscape of software development.
 
-2. Code Reusability:
-One of the primary goals of the design patterns outlined by the Gang of Four is code reusability. Through the use of these patterns, developers can encapsulate functionalities in a modular and reusable manner. This not only reduces redundancy but also enhances maintainability and promotes a more efficient development process.
+3. Code Reusability:
+One of the primary goals of the design patterns outlined by the Gang of Four is code reusability.
+Through the use of these patterns, developers can encapsulate functionalities in a modular and reusable manner.
+This not only reduces redundancy but also enhances maintainability and promotes a more efficient development process.
 
-3. Common Language for Design:
-The book establishes a common language for discussing design choices. Design patterns provide a shared vocabulary that facilitates communication among developers. This common understanding is instrumental in fostering collaboration and ensures a smoother exchange of ideas within development teams.
+5. Common Language for Design:
+The book establishes a common language for discussing design choices.
+Design patterns provide a shared vocabulary that facilitates communication among developers.
+This common understanding is instrumental in fostering collaboration and ensures a smoother exchange of ideas within development teams.
 
 ## Famous Design Patterns
-Beyond the foundational concepts of design patterns, this masterpiece introduces a repertoire of solutions to common problems. Let's embark on a journey to explore some of the most famous design patterns that have left an indelible mark on the world of software engineering.
+Beyond the foundational concepts of design patterns, this masterpiece introduces a repertoire of solutions to common problems. 
+Let's embark on a journey to explore some of the most famous design patterns that have left an indelible mark on the world of software engineering.
 
 ### Singleton Pattern: The Lone Guardian of Instances
 - *Intent:* Ensure a class has only one instance and provide a global point of access to it.
 - *Use case:* When you want to control access to a single instance of a class, and you want to provide a global point of access to that instance.
-- *Implementation:* Typically involves creating a class with a private constructor, a private static instance, and a public static method that returns the instance. The instance is created only if it doesn't exist yet, otherwise, the existing instance is returned.
+- *Implementation:* Typically involves creating a class with a private constructor, a private static instance,
+- and a public static method that returns the instance. The instance is created only if it doesn't exist yet, otherwise, the existing instance is returned.
   
 
 ```
@@ -95,7 +102,8 @@ int main() {
 ```
 
 ### Observer Pattern:
-- *Intent:* Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+- *Intent:* Define a one-to-many dependency between objects so that when one object changes state,
+all its dependents are notified and updated automatically.
 - *Use case:* When you have an object (subject) whose state changes, and you want to notify and update other objects (observers) that are dependent on its state.
 - *Implementation:* Involves a subject that maintains a list of observers, and when its state changes, it notifies all registered observers.
 ```
@@ -157,8 +165,10 @@ int main() {
 ```
 ### Factory Method Pattern:
 - *Intent:* Define an interface for creating an object but let subclasses alter the type of objects that will be created.
-- *Use case:* When you want to delegate the responsibility of instantiating an object to its subclasses, allowing a class to specify its instantiated objects at runtime.
-- *Implementation:* Involves an interface or an abstract class with a method for creating objects, and concrete subclasses that implement this method to produce objects of a specific type.
+- *Use case:* When you want to delegate the responsibility of instantiating an object to its subclasses,
+  allowing a class to specify its instantiated objects at runtime.
+- *Implementation:* Involves an interface or an abstract class with a method for creating objects,
+  and concrete subclasses that implement this method to produce objects of a specific type.
 ```
 #include <iostream>
 
@@ -217,7 +227,8 @@ int main() {
 
 ```
 ### Command Pattern: Encapsulating Requests
-- *Intent:* Encapsulate a request as an object, thereby allowing for parameterization of clients with different requests, queuing of requests, and logging of the requests.
+- *Intent:* Encapsulate a request as an object, thereby allowing for parameterization of clients with different requests,
+  queuing of requests, and logging of the requests.
 - *Use case:* When you want to decouple the sender and receiver of a request and parameterize objects with operations.
 ```
      #include <iostream>
@@ -264,7 +275,8 @@ int main() {
      
 ```
 ### Strategy Pattern: Dynamic Algorithms
-- *Intent:* Define a family of algorithms, encapsulate each one, and make them interchangeable. Clients can vary the algorithm independently from the context that uses it.
+- *Intent:* Define a family of algorithms, encapsulate each one, and make them interchangeable.
+  Clients can vary the algorithm independently from the context that uses it.
 - *Use case:* When you want to define a family of algorithms, encapsulate each algorithm, and make them interchangeable.
 ```
      #include <iostream>
