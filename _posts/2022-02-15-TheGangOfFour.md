@@ -106,6 +106,8 @@ int main() {
 all its dependents are notified and updated automatically.
 - *Use case:* When you have an object (subject) whose state changes, and you want to notify and update other objects (observers) that are dependent on its state.
 - *Implementation:* Involves a subject that maintains a list of observers, and when its state changes, it notifies all registered observers.
+
+  
 ```
 #include <iostream>
 #include <vector>
@@ -169,6 +171,8 @@ int main() {
   allowing a class to specify its instantiated objects at runtime.
 - *Implementation:* Involves an interface or an abstract class with a method for creating objects,
   and concrete subclasses that implement this method to produce objects of a specific type.
+
+
 ```
 #include <iostream>
 
