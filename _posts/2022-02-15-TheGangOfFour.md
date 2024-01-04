@@ -230,6 +230,7 @@ int main() {
 - *Intent:* Encapsulate a request as an object, thereby allowing for parameterization of clients with different requests,
   queuing of requests, and logging of the requests.
 - *Use case:* When you want to decouple the sender and receiver of a request and parameterize objects with operations.
+  
 ```
      #include <iostream>
 
@@ -276,10 +277,10 @@ int main() {
 ```
 
 ### Strategy Pattern: Dynamic Algorithms
-- *Intent:* Define a family of algorithms, encapsulate each one, and make them interchangeable.
-  Clients can vary the algorithm independently from the context that uses it.
+- *Intent:* Define a family of algorithms, encapsulate each one, and make them interchangeable. Clients can vary the algorithm independently from the context that uses it.
 - *Use case:* When you want to define a family of algorithms, encapsulate each algorithm, and make them interchangeable.
-  
+
+
 ```
      #include <iostream>
 
@@ -333,4 +334,4 @@ int main() {
 
          return 0;
      }
-     ```
+```
