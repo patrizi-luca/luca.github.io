@@ -37,7 +37,7 @@ Beyond the foundational concepts of design patterns, this masterpiece introduces
 - *Intent:* Ensure a class has only one instance and provide a global point of access to it.
 - *Use case:* When you want to control access to a single instance of a class, and you want to provide a global point of access to that instance.
 - *Implementation:* Typically involves creating a class with a private constructor, a private static instance, and a public static method that returns the instance. The instance is created only if it doesn't exist yet, otherwise, the existing instance is returned.
-
+```
 #include <iostream>
 
 class Singleton {
@@ -78,86 +78,134 @@ int main() {
 
     return 0;
 }
-
+```
 
 ### Observer Pattern:
 - *Intent:* Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 - *Use case:* When you have an object (subject) whose state changes, and you want to notify and update other objects (observers) that are dependent on its state.
 - *Implementation:* Involves a subject that maintains a list of observers, and when its state changes, it notifies all registered observers.
+```
+#include <iostream>
+#include <vector>
 
-   Example in Python:
-   python
-   class Subject:
-       def __init__(self):
-           self._observers = []
+// Observer interface
+class Observer {
+public:
+    virtual void update() = 0;
+};
 
-       def add_observer(self, observer):
-           self._observers.append(observer)
+// Subject
+class Subject {
+private:
+    std::vector<Observer*> observers;
 
-       def remove_observer(self, observer):
-           self._observers.remove(observer)
+public:
+    // Methods for managing observers
+    void add_observer(Observer* observer) {
+        observers.push_back(observer);
+    }
 
-       def notify_observers(self):
-           for observer in self._observers:
-               observer.update()
+    void remove_observer(Observer* observer) {
+        // Implementation of observer removal
+    }
 
-   class ConcreteObserver:
-       def update(self):
-           print("Subject's state has changed!")
+    // Notify all observers
+    void notify_observers() {
+        for (Observer* observer : observers) {
+            observer->update();
+        }
+    }
+};
 
-   # Example usage:
-   subject = Subject()
-   observer = ConcreteObserver()
-   subject.add_observer(observer)
-   subject.notify_observers()
+// Concrete Observer
+class ConcreteObserver : public Observer {
+public:
+    // Implementation of the update method
+    void update() override {
+        std::cout << "Subject's state has changed!" << std::endl;
+    }
+};
+
+// Example usage:
+int main() {
+    Subject subject;
+    ConcreteObserver observer;
+
+    // Register the observer
+    subject.add_observer(&observer);
+
+    // Notify observers
+    subject.notify_observers();
+
+    return 0;
+}
    
-
+```
 ### Factory Method Pattern:
 *Intent:* Define an interface for creating an object but let subclasses alter the type of objects that will be created.
 - *Use case:* When you want to delegate the responsibility of instantiating an object to its subclasses, allowing a class to specify its instantiated objects at runtime.
 - *Implementation:* Involves an interface or an abstract class with a method for creating objects, and concrete subclasses that implement this method to produce objects of a specific type.
+```
+#include <iostream>
 
-   Example in Python:
-   python
-   from abc import ABC, abstractmethod
+// Product interface
+class Product {
+public:
+    virtual std::string display() = 0;
+};
 
-   class Product(ABC):
-       @abstractmethod
-       def display(self):
-           pass
+// Concrete Products
+class ConcreteProductA : public Product {
+public:
+    std::string display() override {
+        return "Product A";
+    }
+};
 
-   class ConcreteProductA(Product):
-       def display(self):
-           return "Product A"
+class ConcreteProductB : public Product {
+public:
+    std::string display() override {
+        return "Product B";
+    }
+};
 
-   class ConcreteProductB(Product):
-       def display(self):
-           return "Product B"
+// Creator interface
+class Creator {
+public:
+    virtual Product* create_product() = 0;
+};
 
-   class Creator(ABC):
-       @abstractmethod
-       def create_product(self):
-           pass
+// Concrete Creators
+class ConcreteCreatorA : public Creator {
+public:
+    // Factory method to create ConcreteProductA
+    Product* create_product() override {
+        return new ConcreteProductA();
+    }
+};
 
-   class ConcreteCreatorA(Creator):
-       def create_product(self):
-           return ConcreteProductA()
+class ConcreteCreatorB : public Creator {
+public:
+    // Factory method to create ConcreteProductB
+    Product* create_product() override {
+        return new ConcreteProductB();
+    }
+};
 
-   class ConcreteCreatorB(Creator):
-       def create_product(self):
-           return ConcreteProductB()
+// Example usage:
+int main() {
+    Creator* creatorA = new ConcreteCreatorA();
+    Product* productA = creatorA->create_product();
+    std::cout << productA->display() << std::endl;  // Output: Product A
 
-   # Example usage:
-   creator_a = ConcreteCreatorA()
-   product_a = creator_a.create_product()
-   print(product_a.display())  # Output: Product A
-   
+    return 0;
+}
 
+```
 ### Command Pattern: Encapsulating Requests
 *Intent:* Encapsulate a request as an object, thereby allowing for parameterization of clients with different requests, queuing of requests, and logging of the requests.
 *Use case:* When you want to decouple the sender and receiver of a request and parameterize objects with operations.
-*Implementation (C++):*
-     cpp
+```
      #include <iostream>
 
      // Command interface
@@ -200,12 +248,11 @@ int main() {
          return 0;
      }
      
-
+```
 ### Strategy Pattern: Dynamic Algorithms
 *Intent:* Define a family of algorithms, encapsulate each one, and make them interchangeable. Clients can vary the algorithm independently from the context that uses it.
 *Use case:* When you want to define a family of algorithms, encapsulate each algorithm, and make them interchangeable.
-*Implementation (C++):*
-     cpp
+```
      #include <iostream>
 
      // Strategy interface
@@ -259,3 +306,4 @@ int main() {
          return 0;
      }
      
+```
