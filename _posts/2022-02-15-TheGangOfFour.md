@@ -16,13 +16,20 @@ by presenting a catalog of proven solutions to recurring design problems.
 ## Main Concepts:
 
 1. Design Patterns as Solutions:
-At its core, the Gang of Four's book introduces the concept of design patterns – general, reusable solutions to common software design problems. The authors identified and documented 23 such patterns, each encapsulating best practices for various aspects of object-oriented design. These patterns go beyond specific implementations and provide a higher-level view, guiding developers in crafting flexible, maintainable, and scalable software.
+At its core, the Gang of Four's book introduces the concept of design patterns – general, reusable solutions to common software design problems.
+The authors identified and documented 23 such patterns, each encapsulating best practices for various aspects of object-oriented design.
+These patterns go beyond specific implementations and provide a higher-level view, guiding developers in crafting flexible, maintainable, and scalable software.
 
-2. Abstraction of Expertise:
-The Gang of Four's approach involves abstracting the expertise gained by experienced developers into these design patterns. By distilling successful design practices into patterns, the book empowers both novice and seasoned developers to apply these solutions effectively. This abstraction of expertise serves as a bridge, allowing the collective wisdom of experienced designers to be shared and applied across diverse projects.
+3. Abstraction of Expertise:
+The Gang of Four's approach involves abstracting the expertise gained by experienced developers into these design patterns.
+By distilling successful design practices into patterns, the book empowers both novice and seasoned developers to apply these solutions effectively.
+This abstraction of expertise serves as a bridge, allowing the collective wisdom of experienced designers to be shared and applied across diverse projects.
 
-3. Classification of Patterns:
-The 23 design patterns are classified into three main categories: Creational, Structural, and Behavioral. Creational patterns address object creation mechanisms, Structural patterns focus on composition of classes and objects, and Behavioral patterns concentrate on communication between objects. This classification aids developers in understanding the context and purpose of each pattern, enabling them to make informed decisions during the design process.
+4. Classification of Patterns:
+The 23 design patterns are classified into three main categories: Creational, Structural, and Behavioral.
+Creational patterns address object creation mechanisms, Structural patterns focus on composition of classes and objects,
+and Behavioral patterns concentrate on communication between objects. This classification aids developers in understanding the context and purpose of each pattern,
+enabling them to make informed decisions during the design process.
 
 ## Practical Significance:
 
