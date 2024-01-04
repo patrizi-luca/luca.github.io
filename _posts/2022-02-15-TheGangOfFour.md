@@ -281,3 +281,58 @@ int main() {
 - *Use case:* When you want to define a family of algorithms, encapsulate each algorithm, and make them interchangeable.
 
 
+
+```
+     #include <iostream>
+
+     // Strategy interface
+     class Strategy {
+     public:
+         virtual void algorithm() = 0;
+     };
+
+     // Concrete Strategies
+     class ConcreteStrategyA : public Strategy {
+     public:
+         void algorithm() override {
+             std::cout << "Executing algorithm A" << std::endl;
+         }
+     };
+
+     class ConcreteStrategyB : public Strategy {
+     public:
+         void algorithm() override {
+             std::cout << "Executing algorithm B" << std::endl;
+         }
+     };
+
+     // Context
+     class Context {
+     private:
+         Strategy* strategy;
+
+     public:
+         void set_strategy(Strategy* stg) {
+             strategy = stg;
+         }
+
+         void execute_strategy() {
+             strategy->algorithm();
+         }
+     };
+
+     // Example usage:
+     int main() {
+         ConcreteStrategyA strategyA;
+         ConcreteStrategyB strategyB;
+
+         Context context;
+         context.set_strategy(&strategyA);
+         context.execute_strategy();
+
+         context.set_strategy(&strategyB);
+         context.execute_strategy();
+
+         return 0;
+     }
+```
