@@ -55,7 +55,7 @@ Let's embark on a journey to explore some of the most famous design patterns tha
 - *Intent:* Ensure a class has only one instance and provide a global point of access to it.
 - *Use case:* When you want to control access to a single instance of a class, and you want to provide a global point of access to that instance.
 - *Implementation:* Typically involves creating a class with a private constructor, a private static instance,
-- and a public static method that returns the instance. The instance is created only if it doesn't exist yet, otherwise, the existing instance is returned.
+  and a public static method that returns the instance. The instance is created only if it doesn't exist yet, otherwise, the existing instance is returned.
   
 
 ```
