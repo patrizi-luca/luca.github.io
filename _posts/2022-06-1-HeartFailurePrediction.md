@@ -157,60 +157,60 @@ and f1-score metrics.
 
 ### Results Overview
 
-### Model Performances
+# Results Overview
 
-In this section, we present the detailed performance metrics and results 
-for each machine learning model used in heart failure prediction.
+## Model Performances
 
-#### Random Forest Results
+In this section, we present the detailed performance metrics and results for each machine 
+learning model used in heart failure prediction.
+
+### Random Forest Results
 
 **Confusion Matrix:**
-|              | Predicted 0 | Predicted 1 |
-|--------------|-------------|-------------|
-| Actual 0     | 66          | 11          |
-| Actual 1     | 11          | 96          |
+|            | Predicted 0 | Predicted 1 |
+|------------|-------------|-------------|
+| Actual 0   | 66          | 11          |
+| Actual 1   | 11          | 96          |
 
 **Classification Report:**
-|              | precision | recall | f1-score | support |
+|              | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.86      | 0.86   | 0.86     | 77      |
 | 1            | 0.90      | 0.90   | 0.90     | 107     |
-| accuracy     |           |        | 0.88     | 184     |
-| macro avg    | 0.88      | 0.88   | 0.88     | 184     |
-| weighted avg | 0.88      | 0.88   | 0.88     | 184     |
+| Accuracy     |           |        | 0.88     | 184     |
+| Macro Avg    | 0.88      | 0.88   | 0.88     | 184     |
+| Weighted Avg | 0.88      | 0.88   | 0.88     | 184     |
 
-#### Support Vector Machine (SVM) Results
+### Support Vector Machine (SVM) Results
 
 **Confusion Matrix:**
-|              | Predicted 0 | Predicted 1 |
-|--------------|-------------|-------------|
-| Actual 0     | 4           | 73          |
-| Actual 1     | 2           | 105         |
+|            | Predicted 0 | Predicted 1 |
+|------------|-------------|-------------|
+| Actual 0   | 4           | 73          |
+| Actual 1   | 2           | 105         |
 
 **Classification Report:**
-|              | precision | recall | f1-score | support |
+|              | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.67      | 0.05   | 0.10     | 77      |
 | 1            | 0.59      | 0.98   | 0.74     | 107     |
-| accuracy     |           |        | 0.62     | 184     |
-| macro avg    | 0.62      | 0.52   | 0.42     | 184     |
-| weighted avg | 0.62      | 0.62   | 0.47     | 184     |
+| Accuracy     |           |        | 0.62     | 184     |
+| Macro Avg    | 0.62      | 0.52   | 0.42     | 184     |
+| Weighted Avg | 0.62      | 0.62   | 0.47     | 184     |
 
-#### Neural Network (PyTorch) Results
+### Neural Network (PyTorch) Results
 
 **Confusion Matrix:**
-|              | Predicted 0 | Predicted 1 |
-|--------------|-------------|-------------|
-| Actual 0     | 71          | 6           |
-| Actual 1     | 15          | 92          |
+|            | Predicted 0 | Predicted 1 |
+|------------|-------------|-------------|
+| Actual 0   | 71          | 6           |
+| Actual 1   | 15          | 92          |
 
 **Classification Report:**
-|              | precision | recall | f1-score | support |
+|              | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.83      | 0.92   | 0.87     | 77      |
 | 1            | 0.94      | 0.86   | 0.90     | 107     |
-| accuracy     |           |        | 0.89     | 184     |
-| macro avg    | 0.88      | 0.89   | 0.88     | 184     |
-| weighted avg | 0.89      | 0.89   | 0.89     | 184     |
-
-
+| Accuracy     |           |        | 0.89     | 184     |
+| Macro Avg    | 0.88      | 0.89   | 0.88     | 184     |
+| Weighted Avg | 0.89      | 0.89   | 0.89     | 184     |
