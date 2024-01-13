@@ -167,12 +167,14 @@ learning model used in heart failure prediction.
 ### Random Forest Results
 
 **Confusion Matrix:**
+
 |            | Predicted 0 | Predicted 1 |
 |------------|-------------|-------------|
 | Actual 0   | 66          | 11          |
 | Actual 1   | 11          | 96          |
 
 **Classification Report:**
+
 |              | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.86      | 0.86   | 0.86     | 77      |
@@ -184,12 +186,14 @@ learning model used in heart failure prediction.
 ### Support Vector Machine (SVM) Results
 
 **Confusion Matrix:**
+
 |            | Predicted 0 | Predicted 1 |
 |------------|-------------|-------------|
 | Actual 0   | 4           | 73          |
 | Actual 1   | 2           | 105         |
 
 **Classification Report:**
+
 |              | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.67      | 0.05   | 0.10     | 77      |
@@ -201,12 +205,14 @@ learning model used in heart failure prediction.
 ### Neural Network (PyTorch) Results
 
 **Confusion Matrix:**
+
 |            | Predicted 0 | Predicted 1 |
 |------------|-------------|-------------|
 | Actual 0   | 71          | 6           |
 | Actual 1   | 15          | 92          |
 
 **Classification Report:**
+
 |              | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
 | 0            | 0.83      | 0.92   | 0.87     | 77      |
