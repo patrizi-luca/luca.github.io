@@ -173,6 +173,7 @@ learning model used in heart failure prediction.
 | Actual 0   | 66          | 11          |
 | Actual 1   | 11          | 96          |
 
+
 **Classification Report:**
 
 |              | Precision | Recall | F1-Score | Support |
@@ -192,6 +193,7 @@ learning model used in heart failure prediction.
 | Actual 0   | 4           | 73          |
 | Actual 1   | 2           | 105         |
 
+
 **Classification Report:**
 
 |              | Precision | Recall | F1-Score | Support |
@@ -202,6 +204,7 @@ learning model used in heart failure prediction.
 | Macro Avg    | 0.62      | 0.52   | 0.42     | 184     |
 | Weighted Avg | 0.62      | 0.62   | 0.47     | 184     |
 
+
 ### Neural Network (PyTorch) Results
 
 **Confusion Matrix:**
@@ -210,6 +213,7 @@ learning model used in heart failure prediction.
 |------------|-------------|-------------|
 | Actual 0   | 71          | 6           |
 | Actual 1   | 15          | 92          |
+
 
 **Classification Report:**
 
