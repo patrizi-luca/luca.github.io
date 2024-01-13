@@ -157,9 +157,7 @@ and f1-score metrics.
 
 ### Results Overview
 
-# Results Overview
-
-## Model Performances
+### Model Performances
 
 In this section, we present the detailed performance metrics and results for each machine 
 learning model used in heart failure prediction.
