@@ -169,19 +169,20 @@ learning model used in heart failure prediction.
 **Confusion Matrix:**
 
 |            | Predicted 0 | Predicted 1 |
-|------------|-------------|-------------|
-| Actual 0   | 66          | 11          |
-| Actual 1   | 11          | 96          |
+|------------|:-----------:|:-----------:|
+| Actual 0   |     66      |     11      |
+| Actual 1   |     11      |     96      |
 
 **Classification Report:**
 
 |              | Precision | Recall | F1-Score | Support |
-|--------------|-----------|--------|----------|---------|
-| 0            | 0.86      | 0.86   | 0.86     | 77      |
-| 1            | 0.90      | 0.90   | 0.90     | 107     |
-| Accuracy     |           |        | 0.88     | 184     |
-| Macro Avg    | 0.88      | 0.88   | 0.88     | 184     |
-| Weighted Avg | 0.88      | 0.88   | 0.88     | 184     |
+|--------------|:---------:|:------:|:--------:|:-------:|
+| 0            |    0.86   |  0.86  |   0.86   |   77    |
+| 1            |    0.90   |  0.90  |   0.90   |   107   |
+| Accuracy     |           |        |   0.88   |   184   |
+| Macro Avg    |    0.88   |  0.88  |   0.88   |   184   |
+| Weighted Avg |    0.88   |  0.88  |   0.88   |   184   |
+
 
 ### Support Vector Machine (SVM) Results
 
