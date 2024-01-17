@@ -1,6 +1,6 @@
 # Welcome to [PipeGrep](https://patrizi-luca.github.io/)  Blog!
 
-🚀 Hello, fellow tech enthusiasts! I'm Luca Patrizi, and this is my little corner of the internet dedicated to the fascinating worlds of *Artificial Intelligence* and *Programming*.
+🚀 Hello, fellow tech enthusiasts! I'm Luca Patrizi, and this is my little [corner](https://patrizi-luca.github.io/) of the internet dedicated to the fascinating worlds of *Artificial Intelligence* and *Programming*.
 
 ## What to Expect
 
