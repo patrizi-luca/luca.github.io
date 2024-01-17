@@ -33,7 +33,7 @@ From multithreading challenges to the latest language features, we'll explore ho
 #### Multithreading
 In C++, multithreading can be implemented using the <thread> header. Here's a simple example demonstrating the creation of a thread:
 
-
+```
 #include <iostream>
 #include <thread>
 
@@ -55,6 +55,7 @@ int main() {
     return 0;
 }
 
-
+```
 In this example, a new thread is created using std::thread and associated with the function threadFunction(). The main thread continues its work, and myThread.join() ensures that the main thread waits for the created thread to finish its execution before proceeding.
+In C++, a process is an independent program with its own memory space, while a thread is a smaller unit of a process that shares the same memory space. Threads within a process can execute independently, providing parallelism.
   
